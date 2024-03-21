@@ -26,7 +26,11 @@ module.exports = withMT({
     extend: {
       colors: {
         'logo-color': '#1D2026',
+        'transparent':'#303030e6'
       },
+      fontFamily: {
+        Kumbhsans:['Kumbh Sans']
+      }
     },
   },
   plugins: [ ],
