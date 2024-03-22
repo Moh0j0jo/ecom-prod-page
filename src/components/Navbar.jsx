@@ -13,7 +13,7 @@ const Navbar = () => {
   const openCart = () => {
     setCartOn(!cartON);
   };
-  
+
   return (
     <>
       <nav className="w-full h-16 flex items-center justify-between px-5 static">
@@ -59,9 +59,11 @@ const Navbar = () => {
         </div>
 
         <div className="w-1/3 flex items-center justify-end">
-          <div className="w16 mr-2"
-            onClick={openCart}>
-            <FaShoppingCart className="w-10 h-5 fill-gray-600" />
+          <div className="w16 mr-2 relative" onClick={openCart}>
+            <FaShoppingCart className="badge w-10 h-7 fill-gray-600" />
+            <span className="absolute -top-3 -right-2 bg-orange-500 text-white text-xs rounded-full px-2 py-1 opacity:0.9;">
+              5
+            </span>
           </div>
           <div className="w-9 ml-2">
             <img src={avatarPicture} alt="avatar" srcSet="" />

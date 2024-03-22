@@ -30,6 +30,9 @@ module.exports = withMT({
       },
       fontFamily: {
         Kumbhsans:['Kumbh Sans']
+      },
+      fontSize:{
+        xxs:'11px'
       }
     },
   },
