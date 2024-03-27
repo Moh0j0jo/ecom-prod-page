@@ -6,11 +6,14 @@ import { CarouselDefault } from './components/ProductShowCase';
 
 function App() {
   return (
-    <>
+    <div className='w-full lg:mx-auto lg:max-w-7xl'>
     <Navbar/>
-    <CarouselDefault/>
-    <ProductCase/>
-  </>
+    <div className="flex mx-auto flex-col lg:flex-row lg:items-center lg:gap-10 lg:mt-40 lg:px-5">
+      <CarouselDefault/>
+      <ProductCase/>
+    </div>
+
+  </div>
   )
 }
 

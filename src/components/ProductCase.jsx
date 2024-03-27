@@ -2,7 +2,7 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const ProductCase = () => {
   return (
-    <div className="w-full h-1/2 flex flex-col items-start gap-1 p-5">
+    <div className="w-full h-2/5 flex flex-col items-start gap-1 p-5">
       <h3 className="uppercase text-base tracking-wider font-bold text-orange-500 font-Kumbhsans">
         sneaker company
       </h3>

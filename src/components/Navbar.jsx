@@ -2,6 +2,7 @@ import avatarPicture from "../Assets/image-avatar.png";
 import { useState } from "react";
 import { FaBars, FaShoppingCart } from "react-icons/fa";
 import Cart from "./Cart";
+import Navlink from "./NavLinks";
 
 const Navbar = () => {
   const [menuON, setMenuOn] = useState(false);
@@ -17,15 +18,15 @@ const Navbar = () => {
   return (
     <>
       <nav className="w-full h-16 flex items-center justify-between px-5 static">
-        <div className="w-2/3 flex items-center justify-start">
+        <div className="w-1/3 flex items-center justify-start lg:w-max[150px] ">
           <div
-            className="flex items-center justify-center  md:hidden"
+            className="flex items-center justify-center lg:hidden"
             onClick={openMenu}
           >
             <FaBars className="w-10 h-5 fill-gray-600" />
           </div>
 
-          <div className="w-max h-9 flex items-center justify-center">
+          <div className="h-9 flex items-center justify-center">
             <svg
               className="w-60 h-6 fill-logo-color"
               xmlns="http://www.w3.org/2000/svg"
@@ -36,31 +37,13 @@ const Navbar = () => {
               />
             </svg>
           </div>
-
-          <div className={menuON ? "openMenu" : "closeMenu"}>
-            <div onClick={openMenu}>
-              <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
-                  fill="#69707D"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </div>
-            <ul className="flex flex-col gap-7 font-Kumbhsans font-bold text-xl">
-              <li className="menu-link">Collections</li>
-              <li className="menu-link">Men</li>
-              <li className="menu-link">Women</li>
-              <li className="menu-link">About</li>
-              <li className="menu-link">Contact</li>
-            </ul>
-          </div>
-          <div className={menuON ? "openMenuSideBackground" : "hidden"}></div>
         </div>
 
+        <Navlink className="" param={menuON} callParentFunction={openMenu}/>
+        
         <div className="w-1/3 flex items-center justify-end">
           <div className="w16 mr-2 relative" onClick={openCart}>
-            <FaShoppingCart className="badge w-10 h-7 fill-gray-600" />
+            <FaShoppingCart className="badge w-10 h-7 fill-gray-600 cursor-pointer" />
             <span className="absolute -top-3 -right-2 bg-orange-500 text-white text-xs rounded-full px-2 py-1 opacity:0.9;">
               5
             </span>

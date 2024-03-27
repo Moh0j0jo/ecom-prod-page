@@ -1,20 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.open {
+  @apply absolute w-2/3 h-full top-0 left-0 bg-white transition-all ease-out z-20; 
+}
 
-  .openMenu{
-    @apply w-2/3 h-full bg-white absolute inset-y-0 left-0  border z-20 flex flex-col gap-10 p-8;  
-  }
-  .closeMenu{
-    @apply hidden;
-  }
+.close {
+  @apply absolute w-2/3 top-0 -left-full transition-all ease-out z-20;
+}
 
-  .openMenuSideBackground {
-    @apply w-1/3 h-full bg-transparent absolute inset-y-0 right-0 z-20;
-  }
+.bar {
+  @apply  transition-all ease-out absolute flex font-Kumbhsans font-bold text-2xl gap-7 p-5  flex-col;
+}
 
+.openMenuSideBackground {
+  @apply w-1/3 h-full bg-transparent absolute top-0 right-0 opacity-100 z-20 transition-all ease-out;
+}
 
+.closeMenuSideBackground {
+  @apply top-0 -right-full opacity-0 transition-all ease-out;
+}
+
+.menu-link{
+  @apply cursor-pointer
+}

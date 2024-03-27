@@ -10,7 +10,7 @@ import imageDA from "../Assets/image-product-4-thumbnail.jpg";
 
 export function CarouselDefault() {
   return (
-    <Carousel className="h-1/2 rounded-xl">
+    <Carousel className="h-2/5 rounded-xl">
       <img
         src={imageA}
         alt="Product A"
