@@ -14,10 +14,6 @@
   @apply top-0 left-0 bg-white transition-all ease-out z-20; 
 }
 
-/* .close {
-  @apply top-0 -left-full transition-all ease-out z-20;
-} */
-
 .bar {
   @apply  transition-all ease-out absolute flex font-Kumbhsans font-bold text-2xl gap-7 p-5  flex-col;
   @apply lg:flex lg:flex-row lg:items-center lg:justify-between lg:py-0 lg:px-10;
@@ -31,6 +27,21 @@
   @apply top-0 -right-full opacity-0 transition-all ease-out;
 }
 
+/* .menu-link{
+  @apply border-b-4 border-white border-spacing-y-20 hover:border-orange-500 
+} */
+
 .menu-link{
-  @apply cursor-pointer
+  @apply 
+  after:absolute
+  after:-bottom-10 
+  after:content-[''] 
+  after:block 
+  after:h-1 
+  after:w-0
+  after:bg-orange-600
+  after:left-0 
+  after:transition-all 
+  after:ease-out
+  after:hover:w-full
 }

@@ -14,11 +14,12 @@ const Navlink = (props) => {
               </svg>
             </span>
           </li>
-          <li className="menu-link">Collections</li>
-          <li className="menu-link">Men</li>
-          <li className="menu-link">Women</li>
-          <li className="menu-link">About</li>
-          <li className="menu-link">Contact</li>
+          <li className="lg:relative"><a  className="menu-link" href="http://" target="_blank" rel="noopener noreferrer">Collections</a></li>
+          <li className="lg:relative"><a  className="menu-link" href="http://" target="_blank" rel="noopener noreferrer">Men</a></li>
+          <li className="lg:relative"><a  className="menu-link" href="http://" target="_blank" rel="noopener noreferrer">Woman</a></li>
+          <li className="lg:relative"><a  className="menu-link" href="http://" target="_blank" rel="noopener noreferrer">About</a></li>
+          <li className="lg:relative"><a  className="menu-link" href="http://" target="_blank" rel="noopener noreferrer">Contact</a></li>
+
         </ul>
       </div>
       <div className={

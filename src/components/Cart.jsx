@@ -6,7 +6,9 @@ import { FaTrashCan } from "react-icons/fa6";
 const Cart = () => {
   
   return (
-    <div className="flex flex-col gap-4 w-97 h-60 bg-white absolute inset-x-5 top-20 z-20 rounded-lg p-8 font-Kumbhsans font-medium text-gray-500 ">
+    <div className="flex flex-col gap-4 w-97 bg-white absolute 
+      inset-x-5 top-20 z-20 rounded-lg p-8 font-Kumbhsans font-medium text-gray-500
+      lg:w-1/3 lg:inset-x-10 lg:left-auto lg:drop-shadow-2xl">
       <h3 className="text-black font-bold">Cart</h3>
       <div className="w-full border-b-2"></div>
       <div className="flex flex-col gap-3 ">
