@@ -1,9 +1,9 @@
 const Navlink = (props) => {
   return (
     <>
-      <div className={`navbar ${props.param ? "open" : "close"}`}>
+      <div className={`navbar ${props.param ? "active" : ""}`}>
         <ul className="bar">
-          <li className="md:hidden lg:hidden">
+          <li className="lg:hidden">
             <span className="cursor-pointer" onClick={props.callParentFunction}>
               <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
                 <path

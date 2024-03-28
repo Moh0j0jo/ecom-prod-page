@@ -17,8 +17,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full h-16 flex items-center justify-between px-5 static">
-        <div className="w-1/3 flex items-center justify-start lg:w-max[150px] ">
+      <nav className="w-full h-16 flex items-center justify-between px-5 static lg:py-14 lg:border-b-2">
+        <div className="w-1/3 flex items-center justify-start lg:max-w-40">
           <div
             className="flex items-center justify-center lg:hidden"
             onClick={openMenu}
@@ -26,9 +26,9 @@ const Navbar = () => {
             <FaBars className="w-10 h-5 fill-gray-600" />
           </div>
 
-          <div className="h-9 flex items-center justify-center">
+          <div className="h-9 flex items-center justify-center lg:max-w-40">
             <svg
-              className="w-60 h-6 fill-logo-color"
+              className="w-60 h-6 fill-logo-color lg:max-w-40"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
